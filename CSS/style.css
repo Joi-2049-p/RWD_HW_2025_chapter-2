@@ -1,0 +1,197 @@
+:root {
+  --theme_color: #fcb900;
+  --info_color: #a5a5a5;
+  --product_name: 26px;
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 1536px;
+  font-family: MicrosoftJhengHeiRegular;
+}
+
+/*==Header==*/
+header {
+  background: var(--theme_color);
+  padding: 25px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 a {
+  background-image: url(https://cdn-v2.dogcatstar.com/prod/2020/07/03/menu_logo.png.webp);
+  width: 170px;
+  height: 46px;
+  display: block;
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav li a {
+  display: block;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 15px 20px;
+  color: white;
+  margin-right: 10px;
+}
+
+nav li a:hover {
+  background: #f38d00;
+}
+
+/*------content------*/
+.product ul {
+  padding: 25px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product ul li {
+  width: 23%;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 10px #dbdbdb;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item img {
+  width: 100%;
+}
+
+.item img:hover {
+  transform: translateY(-10px) scale(1.02);
+  transition: 0.5s ease-in-out;
+}
+
+.info {
+  padding: 10px 20px;
+}
+
+.info a {
+  text-decoration: none;
+}
+
+.info h3 {
+  font-size: 24px;
+  line-height: 1.2;
+  color: black;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.info span {
+  display: block;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.info p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  color: var(--info_color);
+}
+
+.bnt button {
+  background: var(--theme_color);
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  color: white;
+}
+
+.bnt button:hover {
+  background: #f38d00;
+}
+
+/*------media------*/
+
+@media (max-width: 992px) {
+  header {
+    padding: 25px 15px;
+  }
+  .product ul {
+    padding: 25px 20px;
+  }
+
+  .product ul li {
+    width: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    display: block;
+  }
+
+  header h1 a {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav li a {
+    font-size: 26px;
+    padding: 10px 20px;
+  }
+
+  .product ul {
+    padding: 25px 15px;
+  }
+
+  .info span {
+    display: block;
+    font-size: 22px;
+  }
+
+  .info p {
+    font-size: 20px;
+  }
+
+  .bnt button {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 375px) {
+  header {
+    padding: 25px 15px 15px 15px;
+  }
+  header h1 a {
+    margin-bottom: 30px;
+  }
+  nav li a {
+    font-size: 26px;
+    padding: 10px 20px;
+    margin-bottom: 5px;
+  }
+
+  .product ul {
+    padding: 25px 15px;
+  }
+
+  .product ul li {
+    width: 100%;
+  }
+}
